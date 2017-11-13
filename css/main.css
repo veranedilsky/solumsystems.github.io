@@ -163,6 +163,23 @@ header{
 	background-size:cover;
 }
 
+
+.contactBanner{
+	width:100%;
+	display:flex;
+	align-items:center;
+	height:270px;
+	background:url('../img/projects.jpg');
+	justify-content: center;
+	background-size:cover;
+}
+
+.contactBanner h2, h3{
+	color:#fff;
+	margin-bottom:10px;
+}
+
+
 .header-text{
 	width:90%;
 }
@@ -266,10 +283,28 @@ article{
 	flex-direction:column;
 }
 
+
+.homeWrap{
+    display: flex;
+    justify-content: center;
+    width: 95%;
+    margin: 0 auto;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    flex-direction: row;
+}
+
+
 .col{    
 	width: 100%;
-  	padding: 0px;
 	height:100%;
+	}
+	
+	
+.colhome{    
+	width: 100%;
+  	padding:0;
+	height:auto;
 	}
 	
 .services-col{    
@@ -279,7 +314,7 @@ article{
 	}
 	
 .icon{
-	margin-right:20px;
+	margin-right:10px;
 }
 
 .container{
@@ -456,7 +491,7 @@ input{
 	justify-content: space-evenly;
 	flex-wrap: wrap;
 	display: flex;
-	width:70%;
+	width:90%;
 	margin:100px auto;
 }
 
@@ -476,7 +511,7 @@ input{
 	font-weight:900;
 	padding: 20px;
 	border-bottom:2px solid rgba(207,215,223,.35);
-	background-color:#fff;
+	background-color:#002753;
 	}
 	
 .equalHMR p{
@@ -614,6 +649,23 @@ header{
 	background-size:cover;
 }
 
+
+.contactBanner{
+	width:100%;
+	display:flex;
+	align-items:center;
+	height:370px;
+	background:url('../img/projects.jpg');
+	justify-content: center;
+	background-size:cover;
+}
+
+.contactBanner h2, h3{
+	color:#fff;
+	margin-bottom:10px;
+}
+
+
 .header-text{
 	width:60%;
 }
@@ -708,15 +760,21 @@ article{
 .LinksWrap{
 	display: flex;
     justify-content: space-between;
-    width: 85%;
-    margin: 0 auto;
+    width: 95%;
+    margin: 100px auto;
 	flex-direction:row;
 }
 
 .col{    
-	width: 50%;
-  	padding: 40px;
+	width: 30%;
 	height:100%;
+	}
+	
+	
+.colhome{    
+	width: 30%;
+  	padding:15px 0;
+	height:auto;
 	}
 	
 .services-col{    
@@ -726,7 +784,7 @@ article{
 	}
 	
 .icon{
-	margin-right:20px;
+	margin-right:10px;
 }
 
 .container{
@@ -1072,6 +1130,21 @@ header{
 	background-size:cover;
 }
 
+.contactBanner{
+	width:100%;
+	display:flex;
+	align-items:center;
+	height:370px;
+	background:url('../img/projects.jpg');
+	justify-content: center;
+	background-size:cover;
+}
+
+.contactBanner h2, h3{
+	color:#fff;
+	margin-bottom:10px;
+}
+
 .header-text{
 	width:auto;
 }
@@ -1148,11 +1221,10 @@ article{
 }
 
 .homeLinks{
-	display:flex;
-	width:100%;
-	height:auto;
-	
-	background-color:#f6f9fc;
+	display: flex;
+    width: 100%;
+    height: auto;
+    background-color: #f6f9fc;
 }
 
 .AboutLinks{
@@ -1166,16 +1238,30 @@ article{
 .LinksWrap{
 	display: flex;
     justify-content: space-evenly;
-    width: 56%;
-    margin: 0 auto;
+    width: 80%;
+    margin: 100px auto;
+	flex-direction:row;
+	flex-wrap: wrap;
+}
+
+.homeWrap{
+	display: flex;
+    justify-content: space-evenly;
+    width: 85%;
+    margin: 100px auto;
 	flex-direction:row;
 	flex-wrap: wrap;
 }
 
 .col{    
-	width: 50%;
-  	padding:45px;
+	width: 30%;
 	height:100%;
+	}
+	
+.colhome{    
+	width: 30%;
+  	padding:15px 0;
+	height:auto;
 	}
 	
 .services-col{    
@@ -1396,6 +1482,8 @@ input{
 .equalHMR p{
 	padding: 20px;
     background-color: #fff;
+	font-size:1.1em;
+	color:
 	}
 
 
