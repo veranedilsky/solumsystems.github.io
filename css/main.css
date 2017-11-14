@@ -114,7 +114,8 @@ header div.header-name {
 
 
 nav{
-	display: flex;
+  display: -webkit-flex; /* Safari */
+  display: flex;
 	position:fixed;
 	top:0;
 	height:60px;
@@ -156,7 +157,8 @@ a.logo{
 
 header{
 	width:100%;
-	display:flex;
+  display: -webkit-flex; /* Safari */
+  display: flex;
 	align-items:center;
 	height:300px;
 	justify-content: center;
@@ -166,7 +168,8 @@ header{
 
 .contactBanner{
 	width:100%;
-	display:flex;
+  display: -webkit-flex; /* Safari */
+  display: flex;
 	align-items:center;
 	height:270px;
 	background:url('../img/projects.jpg');
@@ -242,7 +245,8 @@ span{
 
 article{
 	width:100%;
-	display:flex;
+  display: -webkit-flex; /* Safari */
+  display: flex;
 	align-items:center;
 	height:auto;
 	text-align:center;
@@ -260,7 +264,8 @@ article{
 }
 
 .homeLinks{
-	display:flex;
+  display: -webkit-flex; /* Safari */
+  display: flex;
 	width:100%;
 	height:auto;
 	
@@ -268,15 +273,17 @@ article{
 }
 
 .AboutLinks{
-	display:flex;
-	width:100%;
+  display: -webkit-flex; /* Safari */
+  display: flex;
+   max-width:100%;
 	height:auto;
 	
 	background-color:#fff;
 }
 
 .LinksWrap{
-	display: flex;
+  display: -webkit-flex; /* Safari */
+  display: flex;
     justify-content: center;
     width: 90%;
     margin: 0 auto;
@@ -285,7 +292,8 @@ article{
 
 
 .homeWrap{
-    display: flex;
+  display: -webkit-flex; /* Safari */
+  display: flex;
     justify-content: center;
     width: 95%;
     margin: 0 auto;
@@ -318,7 +326,8 @@ article{
 }
 
 .container{
-    display: flex;
+  display: -webkit-flex; /* Safari */
+  display: flex;
     flex-direction: row;
 	margin:45px 0;
 	font-family: 'Source Sans Pro', sans-serif;
@@ -327,7 +336,8 @@ article{
 	}
 	
 .main{
-	display: flex;
+  display: -webkit-flex; /* Safari */
+  display: flex;
     flex-direction: column;
 	}
 	
@@ -350,7 +360,8 @@ article{
 
 	
 .split{
-	display: flex;
+  display: -webkit-flex; /* Safari */
+  display: flex;
     flex-direction:column;
     align-items: stretch;
 	}
@@ -380,7 +391,8 @@ display:none;
 
 
 footer{
-	display: flex;
+  display: -webkit-flex; /* Safari */
+  display: flex;
 	flex-direction:column;
 	font-size:.8em;
     height: 70px;
@@ -490,7 +502,8 @@ input{
 .equalHMRWrap {
 	justify-content: space-evenly;
 	flex-wrap: wrap;
-	display: flex;
+  display: -webkit-flex; /* Safari */
+  display: flex;
 	width:90%;
 	margin:100px auto;
 }
@@ -498,9 +511,10 @@ input{
 .equalHMR {
 	width: 100%;
 	background-color:#fff;
-	margin-bottom:2%;
+	margin:10px;
 	border: 2px solid rgba(207,215,223,.35);
-	display:flex;
+  display: -webkit-flex; /* Safari */
+  display: flex;
 	flex-direction:column;
 	font-family: 'Source Sans Pro', sans-serif;
 	font-size: 1em;
@@ -599,7 +613,8 @@ input{
 	
 	
 	nav{
-	display: flex;
+  display: -webkit-flex; /* Safari */
+  display: flex;
 	position:fixed;
 	top:0;
 	height:60px;
@@ -641,7 +656,8 @@ a.logo{
 
 header{
 	width:100%;
-	display:flex;
+  display: -webkit-flex; /* Safari */
+  display: flex;
 	align-items:center;
 	height:300px;
 	justify-content: center;
@@ -652,7 +668,8 @@ header{
 
 .contactBanner{
 	width:100%;
-	display:flex;
+  display: -webkit-flex; /* Safari */
+  display: flex;
 	align-items:center;
 	height:370px;
 	background:url('../img/projects.jpg');
@@ -724,7 +741,8 @@ span{
 
 article{
 	width:100%;
-	display:flex;
+  display: -webkit-flex; /* Safari */
+  display: flex;
 	align-items:center;
 	height:auto;
 	text-align:center;
@@ -742,7 +760,8 @@ article{
 }
 
 .homeLinks{
-	display:flex;
+  display: -webkit-flex; /* Safari */
+  display: flex;
 	width:100%;
 	height:auto;
 	
@@ -750,15 +769,17 @@ article{
 }
 
 .AboutLinks{
-	display:flex;
-	width:100%;
+  display: -webkit-flex; /* Safari */
+  display: flex;
+   max-width:100%;
 	height:auto;
 	
 	background-color:#fff;
 }
 
 .LinksWrap{
-	display: flex;
+  display: -webkit-flex; /* Safari */
+  display: flex;
     justify-content: space-between;
     width: 95%;
     margin: 100px auto;
@@ -788,7 +809,8 @@ article{
 }
 
 .container{
-    display: flex;
+  display: -webkit-flex; /* Safari */
+  display: flex;
     flex-direction: row;
 	margin:35px 0;
 	font-family: 'Source Sans Pro', sans-serif;
@@ -797,7 +819,8 @@ article{
 	}
 	
 .main{
-	display: flex;
+  display: -webkit-flex; /* Safari */
+  display: flex;
     flex-direction: column;
 	}
 	
@@ -820,7 +843,8 @@ article{
 
 	
 .split{
-	display: flex;
+  display: -webkit-flex; /* Safari */
+  display: flex;
     flex-direction: row;
     align-items: stretch;
 	}
@@ -851,7 +875,8 @@ display:none;
 
 
 footer{
-	display: flex;
+  display: -webkit-flex; /* Safari */
+  display: flex;
 	flex-direction:row;
 	font-size:1em;
     height: 70px;
@@ -961,7 +986,8 @@ input{
 .equalHMRWrap {
 	justify-content: space-evenly;
 	flex-wrap: wrap;
-	display: flex;
+  display: -webkit-flex; /* Safari */
+  display: flex;
 	width:85%;
 	margin:100px auto;
 }
@@ -969,9 +995,10 @@ input{
 .equalHMR {
 	width: 45%;
 	background-color:#fff;
-	margin-bottom:2%;
+	margin:10px;
 	border: 2px solid rgba(207,215,223,.35);
-	display:flex;
+  display: -webkit-flex; /* Safari */
+  display: flex;
 	flex-direction:column;
 	font-family: 'Source Sans Pro', sans-serif;
 	font-size: 1em;
@@ -1081,7 +1108,8 @@ input{
 
 
 nav{
-	display: flex;
+  display: -webkit-flex; /* Safari */
+  display: flex;
 	position:fixed;
 	top:0;
 	height:60px;
@@ -1123,7 +1151,8 @@ a.logo{
 
 header{
 	width:100%;
-	display:flex;
+  display: -webkit-flex; /* Safari */
+  display: flex;
 	align-items:center;
 	height:300px;
 	justify-content: center;
@@ -1132,7 +1161,8 @@ header{
 
 .contactBanner{
 	width:100%;
-	display:flex;
+  display: -webkit-flex; /* Safari */
+  display: flex;
 	align-items:center;
 	height:370px;
 	background:url('../img/projects.jpg');
@@ -1203,7 +1233,8 @@ span{
 
 article{
 	width:100%;
-	display:flex;
+  display: -webkit-flex; /* Safari */
+  display: flex;
 	align-items:center;
 	height:auto;
 	text-align:center;
@@ -1221,22 +1252,25 @@ article{
 }
 
 .homeLinks{
-	display: flex;
+  display: -webkit-flex; /* Safari */
+  display: flex;
     width: 100%;
     height: auto;
     background-color: #f6f9fc;
 }
 
 .AboutLinks{
-	display:flex;
-	width:100%;
+  display: -webkit-flex; /* Safari */
+  display: flex;
+   max-width:100%;
 	height:auto;
 	
 	background-color:#fff;
 }
 
 .LinksWrap{
-	display: flex;
+  display: -webkit-flex; /* Safari */
+  display: flex;
     justify-content: space-evenly;
     width: 80%;
     margin: 100px auto;
@@ -1245,7 +1279,8 @@ article{
 }
 
 .homeWrap{
-	display: flex;
+  display: -webkit-flex; /* Safari */
+  display: flex;
     justify-content: space-evenly;
     width: 85%;
     margin: 100px auto;
@@ -1275,7 +1310,8 @@ article{
 }
 
 .container{
-    display: flex;
+  display: -webkit-flex; /* Safari */
+  display: flex;
     flex-direction: row;
 	margin:5px 0;
 	font-family: 'Source Sans Pro', sans-serif;
@@ -1285,7 +1321,8 @@ article{
 	}
 	
 .main{
-	display: flex;
+  display: -webkit-flex; /* Safari */
+  display: flex;
     flex-direction: column;
 	width:75%;
 	}
@@ -1309,7 +1346,8 @@ article{
 
 	
 .split{
-	display: flex;
+  display: -webkit-flex; /* Safari */
+  display: flex;
     flex-direction: row;
     align-items: stretch;
 	}
@@ -1345,7 +1383,8 @@ article{
 
 
 footer{
-	display: flex;
+  display: -webkit-flex; /* Safari */
+  display: flex;
 	flex-direction:row;
 	font-size:1em;
     height: 70px;
@@ -1376,7 +1415,7 @@ ul{
     outline: 0;
     background: #f6f9fc;
     border: 2px solid rgba(207,215,223,.35);
-    width:100%;
+    max-width:100%;
     height: 50px;
     margin-bottom: 50px;
     border-radius: 0px;
@@ -1463,7 +1502,7 @@ input{
 .equalHMR {
 	width: 30%;
 	background-color:#fff;
-	margin-bottom:2%;
+	margin:10px;
 	border: 2px solid rgba(207,215,223,.35);
 	display:flex;
 	flex-direction:column;
