@@ -1,6 +1,9 @@
 <!doctype html>
 <html class="no-js" lang="">
     <head>
+	
+		<link href="https://fonts.googleapis.com/css?family=Lato:400,700,900" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro" rel="stylesheet">
 
     	<meta name="theme-color" content="#3e4444">
         <meta charset="utf-8">
@@ -9,10 +12,6 @@
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
-
-		<link href="https://fonts.googleapis.com/css?family=Lato:400,700,900" rel="stylesheet">
-		<link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro" rel="stylesheet">
-		
 		
 	
         <link rel="stylesheet" href="css/normalize.css">
@@ -202,10 +201,12 @@ To deliver the best services possible - we are establishing strategic partnershi
 
 
 <article class="contactBanner">
+<div class="contactBanner-txt">
 <h2>Get in touch</h2><h3>Let us know how we can help.</h3>
 <form action="about-us.html#tswname">
     <input type="submit" value="Contact Us" />
 </form>
+</div>
 </article>
 
 
@@ -250,7 +251,7 @@ function showSlides() {
     }
     slideIndex++;
     if (slideIndex> slides.length) {slideIndex = 1} 
-    slides[slideIndex-1].style.display = "flex"; 
+    slides[slideIndex-1].style.display = "block"; 
     setTimeout(showSlides, 3000); // Change image every 3 seconds
 }
 
@@ -260,7 +261,7 @@ function currentSlide(no) {
         slides[i].style.display = "none"; 
     }
     slideIndex = no;
-    slides[no-1].style.display = "flex";
+    slides[no-1].style.display = "block";
 }
 
 function plusSlides(n) {

@@ -337,7 +337,7 @@ article{
 	
 .main{
   display: -webkit-flex; /* Safari */
-  display: flex;
+  display: block;
     flex-direction: column;
 	}
 	
@@ -820,7 +820,7 @@ article{
 	
 .main{
   display: -webkit-flex; /* Safari */
-  display: flex;
+  display: block;
     flex-direction: column;
 	}
 	
@@ -1160,14 +1160,38 @@ header{
 }
 
 .contactBanner{
-	width:100%;
-  display: -webkit-flex; /* Safari */
-  display: flex;
-	align-items:center;
-	height:370px;
-	background:url('../img/projects.jpg');
-	justify-content: center;
-	background-size:cover;
+    background-position: 50%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    padding: 128px 0;
+    padding: 8rem 0;
+    width: 100%;
+}
+
+
+.contactBanner-txt{
+	-webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    padding: 0 19.2px;
+    padding: 0 1.2rem;
+    margin: 0 auto;
 }
 
 .contactBanner h2, h3{
@@ -1279,13 +1303,18 @@ article{
 }
 
 .homeWrap{
-  display: -webkit-flex; /* Safari */
-  display: flex;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
     justify-content: space-evenly;
     width: 85%;
     margin: 100px auto;
-	flex-direction:row;
-	flex-wrap: wrap;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
 }
 
 .col{    
@@ -1306,12 +1335,17 @@ article{
 	}
 	
 .icon{
+display:block;
 	width:10%;
 }
 
 .container{
-  display: -webkit-flex; /* Safari */
-  display: flex;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
     flex-direction: row;
 	margin:5px 0;
 	font-family: 'Source Sans Pro', sans-serif;
@@ -1321,8 +1355,12 @@ article{
 	}
 	
 .main{
-  display: -webkit-flex; /* Safari */
-  display: flex;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;;
     flex-direction: column;
 	width:75%;
 	}
