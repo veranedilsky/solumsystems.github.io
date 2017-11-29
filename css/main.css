@@ -1205,6 +1205,44 @@ input{
   background-color: rgba(0,0,0,0.3);
 }
 
+
+
+
+
+
+
+
+
+ul.contain{
+	font-family: 'Source Sans Pro', sans-serif;
+    line-height: 1.4;
+    font-size: .9em;
+    display: flex;
+    justify-content: space-evenly;
+
+}
+
+.one, .two, .three, .four, .five, .six{
+	width: 30%;
+    position: relative;
+    padding-left: 55px;
+    margin-bottom: 40px;
+    color: #949998;
+}
+
+
+.one:before{
+	content: '\1f385';
+	font-family: 'icomoon';
+	font-size:2em;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+
+
+
 	
 	}
 	
