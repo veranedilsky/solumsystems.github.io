@@ -17,6 +17,8 @@
         <link rel="stylesheet" href="css/normalize.css">
         <link rel="stylesheet" href="css/main.css">
         <script src="js/vendor/modernizr-2.8.3.min.js"></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+
 
         
     </head>
@@ -27,7 +29,7 @@
 
 
 <nav>
-<a class="logo" href="index.html"><img src="img/logo.png"/></a>
+<a href="index.html"><img class="logo" src="img/logo.svg"/></a>
 
 	
 <ul>
@@ -43,50 +45,43 @@
 
 
 
-
-
-
-
-<div class="slideshow-container">
-
-<div class="mySlides fade" style="background-image: url(img/cloud1.jpg)">
-<div class="header-text">
+<div class="gallery">
+  <div class="movable">
+  
+    <div style="background-image: url(img/cloud1.jpg)"><div class="header-text">
 <h1>Our Mission is:<br/>
 To help you.</h1>
 <h3>
 Find out more, about us and what we do to make it happen.</h3>
-</div>
-</div>
+</div></div>
 
-<div class="mySlides fade" style="background-image: url(img/servercabinet.jpg)">
-<div class="header-text">
+    <div style="background-image: url(img/servercabinet.jpg)"><div class="header-text">
 <h1>Blah Blah<br/>
 Blah</h1>
 <h3>
 Find out more, about us and what we do to make it happen.</h3>
-</div>
-</div>
+</div></div>
 
-<div class="mySlides fade" style="background-image: url(img/cloud2.jpg)">
-<div class="header-text">
+    <div style="background-image: url(img/cloud2.jpg)"><div class="header-text">
 <h1>Hello<br/>
 Blah Blah Blah</h1>
 <h3>
 Find out more, about us and what we do to make it happen.</h3>
-</div>
+</div></div>
+
+  </div>
+  
+  <button class="prev"> < </button>
+  <button class="next"> > </button>
 </div>
 
 
-<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-  <a class="next" onclick="plusSlides(1)">&#10095;</a>
 
-<!--<div style="text-align:center">
-  <span class="dot" onclick="currentSlide(1)"></span> 
-  <span class="dot" onclick="currentSlide(2)"></span> 
-  <span class="dot" onclick="currentSlide(3)"></span> 
-</div>
--->
-</div>
+
+
+
+
+
 
 
 
@@ -132,142 +127,31 @@ Viruses, worms and security threads are keeping you down. Call us to help you fi
 
 
 <ul class="contain">
-<li class="four"><b>Keep Our Planet green</b>
-
-<p>Recycle old computers, printers, electronic boards. We are helping our clients to propertly recycle.
-</p></li>
-
-<li class="five"><b>Your Computer Needs Protection</b>
+<li class="four"><b>Email Solutions</b>
 
 <p>
-Viruses, worms and security threads are keeping you down. Call us to help you fight it and keep your business running.</p></li>
+Can't afford to manage an Exchange server for your business? We can do it for you. Our state of art server ready for your email flow within a minutes. From one to one hundred mailboxe with antivirus protection, SPAM filtering and automatic backups waitning for your requests.</p></li>
 
-<li class="six"><b>System Administration</b>
-
-<p>Any Microsoft, Dell, Nortel, Cisco, APC, etc. systems can be administered for you. Our specialists - trained and certified to do the job professionally and reliably.
-</p></li>
-</ul>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<div class="colhome">
-<div class="container">
-  <section class="icon"><span class="icon-light-bulb2">&#xf000;</span></section>
-  <section class="main">
-<b>Keep Our Planet green</b>
-
-<p>Recycle old computers, printers, electronic boards. We are helping our clients to propertly recycle.
-</p>
-  </section>
-</div>
-</div>
-
-
-
-
-
-<div class="colhome">
-<div class="container">
-  <section class="icon"><span class="icon-organization">&#xf037;</span></section>
-  <section class="main">
-<b>Your Computer Needs Protection</b>
-
+<li class="five"><b>Network And Security</b>
 <p>
-Viruses, worms and security threads are keeping you down. Call us to help you fight it and keep your business running.</p>
-  </section>
-</div>
-</div>
+Security situation changing everyday. We can help you to maintain and and monitor your infrastructure.</p></li>
 
-
-
-
-
-
-<div class="colhome">
-<div class="container">
-  <section class="icon"><span class="icon-light-bulb2">&#xf000;</span></section>
-  <section class="main">
-<b>System Administration</b>
-
-<p>Any Microsoft, Dell, Nortel, Cisco, APC, etc. systems can be administered for you. Our specialists - trained and certified to do the job professionally and reliably.
-</p>
-  </section>
-</div>
-</div>
-
-
-
-
-
-<div class="colhome">
-<div class="container">
-  <section class="icon"><span class="icon-organization">&#xf037;</span></section>
-  <section class="main">
-<b>Email Solutions</b>
-
-<p>
-Can't afford to manage an Exchange server for your business? We can do it for you. Our state of art server ready for your email flow within a minutes. From one to one hundred mailboxe with antivirus protection, SPAM filtering and automatic backups waitning for your requests.</p>
-  </section>
-</div>
-</div>
-
-
-
-
-
-<div class="colhome">
-<div class="container">
-  <section class="icon"><span class="icon-clock2">&#xf046;</span></section>
-  <section class="main">
-<b>Network And Security</b>
-<p>
-Security situation changing everyday. We can help you to maintain and and monitor your infrastructure.</p>
-  </section>
-</div>
-</div>
-
-
-
-
-<div class="colhome">
-<div class="container">
-  <section class="icon"><span class="icon-organization">&#xf037;</span></section>
-  <section class="main">
-<b>Our Partners</b>
+<li class="six"><b>Our Partners</b>
 
 <p>
 To deliver the best services possible - we are establishing strategic partnerships with best technology companies all over the world, Microsoft, Dell, APC, Itermedia, FastWebHost, Insight Canada, Netronix, and other companies with best reputation in IT work.</p>
-  </section>
-</div>
-</div>
-
-
-
+</li>
+</ul>
 
 
 </div>
 </section>
+
+
+
+
+
+
 
 
 
@@ -297,41 +181,38 @@ To deliver the best services possible - we are establishing strategic partnershi
 
 
 
-  <script type="text/javascript">
+
+
   
- var slideIndex = 0;
-  var slides = document.getElementsByClassName("mySlides");
+  
+  
+  <script type="text/javascript">
+  $(function(){
 
-showSlides();
+  $('.gallery').each(function() {
 
-function showSlides() {    
-    var i;    
-    for (i = 0; i < slides.length; i++) {
-        slides[i].style.display = "none"; 
+    var $gal     = $(this),
+        $movable = $(".movable", $gal), 
+        $slides  = $(">*", $movable),
+        N        = $slides.length,
+        C        = 0,
+        itv      = null;
+    
+    function play() { itv = setInterval(anim, 5000); }
+    function stop() { clearInterval(itv); }
+    function anim() {
+      C = ($(this).is(".prev") ? --C : ++C) <0 ? N-1 : C%N;
+      $movable.css({transform: "translateX(-"+ (C*100) +"%)"});
     }
-    slideIndex++;
-    if (slideIndex> slides.length) {slideIndex = 1} 
-    slides[slideIndex-1].style.display = "block"; 
-    setTimeout(showSlides, 4000); // Change image every 4 seconds
-}
+    
+    $(".prev, .next", this).on("click", anim);
+    $gal.hover(stop, play);
+    play();
 
-function currentSlide(no) {
-    var i;    
-    for (i = 0; i < slides.length; i++) {
-        slides[i].style.display = "none"; 
-    }
-    slideIndex = no;
-    slides[no-1].style.display = "block";
-}
+  });
 
-function plusSlides(n) {
-  var newslideIndex = slideIndex + n;
-  if(newslideIndex < 4 && newslideIndex > 0){
-     currentSlide(newslideIndex);
-  }
-}
-
-  </script>
+});
+</script>
   
   
   
