@@ -56,7 +56,7 @@ footer, header, hgroup, menu, nav, section {
 display: block;
 }
 body {
-line-height: 1;
+line-height: 1.5;
 background-color:#fff;
 padding-top:60px;
 }
@@ -90,7 +90,17 @@ border-spacing: 0;
     padding: 0.2em 0;
 }
 
-
+.clearfix:before,
+.clearfix:after {
+    content: " ";
+    display: table;
+}
+.clearfix:after {
+    clear: both;
+}
+.clearfix {
+    *zoom: 1;
+}
 
 /* ----- START MOBILE FIRST STYLES -------- */
 html {background-color:none; font-size: 100%; box-sizing: border-box;
@@ -112,46 +122,70 @@ header div.header-name {
 
 
 nav{
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-	position:fixed;
-	top:0;
-	height:60px;
-	background-color:#fff;
-	align-items: center;
-	z-index: 99;
-	box-shadow:0 -6px 30px #777;
-	justify-content:space-around;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 99;
+    background-color: #fff;
+    height: 60px;
 }
 
 nav a{
+
 	font-family: 'Source Sans Pro', sans-serif;
     text-decoration: none;
     color: #444444;
     font-weight: 600;
+	height: 100%;
 	}
 	
 .active {
-	border-bottom:2px solid #F2574F;
+
 }
 
 nav ul{
-	text-align:right;
+display:none;
+
 }
 
-nav ul li{
-    text-align: right;
-    width: auto;
-    height:auto;
-	margin:0 10px;
+nav li{
+    padding: 15px;
+    background-color: #fff;
+	border-bottom: 2px solid rgba(207,215,223,.35);
+}
+
+
+nav a#pull {
+    display: block;
+    background: none;
+    width: 100%;
+	text-align:right;
+  }
+  
+
+nav a#pull:after {
+    content:"";
+    background: url('nav-icon.png') no-repeat;
+    width: 30px;
+    height: 30px;
     display: inline-block;
+    position: absolute;
+    right: 15px;
+    top: 10px;
+  }
+  
+#wrapnav{
+    display: flex;
+    height: 60px;
+	border-bottom: 2px solid rgba(207,215,223,.35);
+	align-items: center;
 }
 
 
 .logo{
-	height:100%;
-	width:100%;
+    height: 100%;
+    width: 100%;
+	padding-left:5px;
 }
 
 
@@ -224,7 +258,6 @@ h4{
 
 p{
 	font-family: 'Source Sans Pro', sans-serif;
-	line-height: 1.4;
 	font-size: 1em;
 	color:#444444;
 	margin:10px 0;
@@ -401,7 +434,6 @@ footer a{
 
 ul{
     font-family: 'Source Sans Pro', sans-serif;
-    line-height: 1.4;
     font-size: .9em;
 	}
 
@@ -489,6 +521,7 @@ input{
 .equalHMRWrap {
 	justify-content: space-evenly;
 	flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -497,32 +530,28 @@ input{
 }
 
 .equalHMR {
-	width: 100%;
-	background-color:#fff;
-	margin:10px;
-	border: 2px solid rgba(207,215,223,.35);
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: column;
-    flex-direction: column;
-	font-family: 'Source Sans Pro', sans-serif;
-	font-size: 1em;
+    background-color: #fff;
+    margin: 10px 0;
+	width:100%;
+    display: block;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 1em;
+    padding: 40px 25px;
+    border: 1px solid #ccc;
+    border-bottom: 10px solid #002753;
 }
 
 .equalHMR b{
-	color:#002753;
-	font-weight:900;
-	padding: 20px;
-	border-bottom:2px solid rgba(207,215,223,.35);
-	background-color:fff;
+	color: #002753;
+    font-weight: 900;
+    font-size: 1.3em;
 	}
 	
 .equalHMR p{
-	padding: 20px;
-    background-color: #fff;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 1em;
+    color: #444444;
+    margin: 20px 0;
 	}
 
 
@@ -556,7 +585,7 @@ input{
   font-size: 18px;
   transition: 0.6s ease;
   border: none;
-  background:rgba(255,255,255, 0.4);
+  background:none;
 }
 
 /* Position the "next button" to the right */
@@ -571,13 +600,16 @@ input{
 }
 
 
-
+.icon-chevron-left, .icon-chevron-right {
+	color:#fff;
+	font-size:2em;
+	opacity:0.8;
+}
 
 
 
 ul.contain{
 	font-family: 'Source Sans Pro', sans-serif;
-    line-height: 1.4;
     font-size: .9em;
     display: block;
     justify-content: space-evenly;
@@ -661,7 +693,7 @@ ul.contain{
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  height: 70vh;
+  height: 100vh;
   transition: transform 0.6s;
 
 }
@@ -696,7 +728,9 @@ ul.contain{
    /* Small Devices, Tablets */
     @media only screen and (min-width : 768px) {
 	
-	
+	nav a#pull {
+  display: none;
+}   
 	
 	
 	nav{
@@ -709,7 +743,7 @@ ul.contain{
 	background-color:#fff;
 	align-items: center;
 	z-index: 99;
-	box-shadow:0 -6px 30px #777;
+	border-bottom: 1px solid #ccc;
 	justify-content:space-around;
 }
 
@@ -718,6 +752,7 @@ nav a{
     text-decoration: none;
     color: #444444;
     font-weight: 600;
+	height: 100%;
 	}
 	
 .active {
@@ -726,14 +761,16 @@ nav a{
 
 nav ul{
 	text-align:right;
+	display:block;
 }
 
-nav ul li{
+nav li{
     text-align: right;
     width: auto;
     height:auto;
 	margin:0 10px;
     display: inline-block;
+	border-bottom: none;
 }
 
 
@@ -798,7 +835,6 @@ h2{
 
 p{
 	font-family: 'Source Sans Pro', sans-serif;
-	line-height: 1.4;
 	font-size: 1em;
 	color:#444444;
 	margin:10px 0;
@@ -975,7 +1011,6 @@ footer a{
 
 ul{
     font-family: 'Source Sans Pro', sans-serif;
-    line-height: 1.4;
     font-size: .9em;
 	}
 
@@ -1063,42 +1098,39 @@ input{
 .equalHMRWrap {
 	justify-content: space-evenly;
 	flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-	width:85%;
+	width:95%;
 	margin:100px auto;
 }
 
+
 .equalHMR {
-	width: 45%;
-	background-color:#fff;
-	margin:10px;
-	border: 2px solid rgba(207,215,223,.35);
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: column;
-    flex-direction: column;
-	font-family: 'Source Sans Pro', sans-serif;
-	font-size: 1em;
+    background-color: #fff;
+    margin: 10px 0;
+    width: 45%;
+    display: block;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 1em;
+    padding: 40px 25px;
+    border: 1px solid #ccc;
+    border-bottom: 10px solid #002753;
 }
 
 .equalHMR b{
-	color:#002753;
-	font-weight:900;
-	padding: 20px;
-	border-bottom:2px solid rgba(207,215,223,.35);
-	background-color:#fff;
+    color: #002753;
+    font-weight: 900;
+    font-size: 1.3em;
 	}
 	
 .equalHMR p{
-	padding: 20px;
-    background-color: #fff;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 1em;
+    color: #444444;
+    margin: 20px 0;
 	}
-
 
 
 
@@ -1130,7 +1162,7 @@ input{
   font-size: 18px;
   transition: 0.6s ease;
   border: none;
-  background:rgba(255,255,255, 0.4);
+  background:none;
 }
 
 /* Position the "next button" to the right */
@@ -1151,12 +1183,11 @@ input{
 
 ul.contain{
 	font-family: 'Source Sans Pro', sans-serif;
-    line-height: 1.4;
     font-size: .9em;
     display: flex;
     justify-content: space-between;
 	
-	width: 98%;
+	width: 95%;
     margin: 100px auto;
 
 }
@@ -1236,7 +1267,7 @@ ul.contain{
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  height: 70vh;
+  height: 55vh;
   transition: transform 0.6s;
 
 }
@@ -1275,12 +1306,9 @@ ul.contain{
 @media only screen and (min-width : 1200px) {
 
 
-#menu-toggle {display: none;}
-
-.label-toggle {display: none;}
-
-.navicon{display:none;}
-
+nav a#pull {
+  display: none;
+}   
 
 nav{
     display: -webkit-box;
@@ -1292,7 +1320,7 @@ nav{
 	background-color:#fff;
 	align-items: center;
 	z-index: 99;
-	box-shadow:0 -6px 30px #777;
+	border-bottom: 1px solid #ccc;
 	justify-content:space-around;
 }
 
@@ -1301,6 +1329,7 @@ nav a{
     text-decoration: none;
     color: #444444;
     font-weight: 600;
+	height: 100%;
 	}
 	
 .active {
@@ -1309,14 +1338,16 @@ nav a{
 
 nav ul{
 	text-align:right;
+	display:block;
 }
 
-nav ul li{
+nav li{
     text-align: right;
     width: auto;
     height:auto;
 	margin:0 10px;
     display: inline-block;
+	border-bottom: none;
 }
 
 
@@ -1400,7 +1431,6 @@ h2{
 
 p{
 	font-family: 'Source Sans Pro', sans-serif;
-	line-height: 1.4;
 	font-size: 1em;
 	color:#444444;
 	margin:10px 0;
@@ -1590,7 +1620,6 @@ footer a{
 
 ul{
     font-family: 'Source Sans Pro', sans-serif;
-    line-height: 1.4;
     font-size: .9em;
 	}
 
@@ -1676,7 +1705,8 @@ input{
 
 
 .equalHMRWrap {
-	justify-content: space-evenly;
+	justify-content: space-evenly;	
+    -ms-flex-wrap: wrap;
 	flex-wrap: wrap;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1686,34 +1716,28 @@ input{
 }
 
 .equalHMR {
-	width: 30%;
-	background-color:#fff;
-	margin:10px;
-	border: 2px solid rgba(207,215,223,.35);
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: column;
-    flex-direction: column;
-	font-family: 'Source Sans Pro', sans-serif;
-	font-size: 1em;
+    background-color: #fff;
+    margin: 10px 0;
+    width: 30%;
+    display: block;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 1em;
+    padding: 40px 25px;
+    border: 1px solid #ccc;
+    border-bottom: 10px solid #002753;
 }
 
 .equalHMR b{
-	color:#002753;
-	font-weight:900;
-	padding: 20px;
-	border-bottom:2px solid rgba(207,215,223,.35);
-	background-color:#fff;
+    color: #002753;
+    font-weight: 900;
+    font-size: 1.3em;
 	}
 	
 .equalHMR p{
-	padding: 20px;
-    background-color: #fff;
-	font-size:1.1em;
-	color:
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 1em;
+    color: #444444;
+    margin: 20px 0;
 	}
 
 
@@ -1750,7 +1774,7 @@ input{
 .prev, .next {
   cursor: default;
   position: absolute;
-  top: 60%;
+  top: 50%;
   width: auto;
   padding: 16px;
   color: white;
@@ -1758,13 +1782,12 @@ input{
   font-size: 18px;
   transition: 0.6s ease;
   border: none;
-  background:rgba(255,255,255, 0.4);
+  background:none;
 }
 
 /* Position the "next button" to the right */
 .next {
   right: 0;
-  border-radius: 3px 0 0 3px;
 }
 
 /* On hover, add a black background color with a little bit see-through */
@@ -1777,9 +1800,9 @@ input{
 
 
 
+
 ul.contain{
 	font-family: 'Source Sans Pro', sans-serif;
-    line-height: 1.4;
     font-size: .9em;
     display: flex;
     justify-content: space-between;
@@ -1863,7 +1886,7 @@ ul.contain{
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  height: 70vh;
+  height: 60vh;
   transition: transform 0.6s;
 
 }

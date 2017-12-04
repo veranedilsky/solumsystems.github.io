@@ -27,10 +27,12 @@
 	
 	
 
-
 <nav>
-<a href="index.html"><img class="logo" src="img/logo.svg"/></a>
 
+<div id="wrapnav">
+<a href="index.html"><img class="logo" src="img/logo.svg"/></a>
+<a href="#" id="pull">Menu</a>
+</div>
 	
 <ul>
 <li><a href="index.html" class="active">Home</a></li>
@@ -38,8 +40,8 @@
 <li><a href="projects.html">Projects</a></li>
 <li><a href="about-us.html">About Us</a></li>
 </ul>
-<a href="javascript:void(0);" class="navicon" onclick="myFunction()">&#9776;</a>
-			</nav>
+
+</nav>
 
 
 
@@ -71,8 +73,9 @@ Find out more, about us and what we do to make it happen.</h3>
 
   </div>
   
-  <button class="prev"> < </button>
-  <button class="next"> > </button>
+  <button class="prev"><span class="icon-chevron-left">&#xf0a4;</span></button>
+  <button class="next"><span class="icon-chevron-right">&#xf078;</span></button>
+ 
 </div>
 
 
@@ -179,11 +182,28 @@ To deliver the best services possible - we are establishing strategic partnershi
 
 
 
+  <script type="text/javascript">
 
-
-
+$(function() {
+  var pull    = $('#pull');
+    menu    = $('nav ul');
+    menuHeight  = menu.height();
+ 
+  $(pull).on('click', function(e) {
+    e.preventDefault();
+    menu.slideToggle();
+  });
+});
 
   
+  $(window).resize(function(){
+  var w = $(window).width();
+  if(w > 320 && menu.is(':hidden')) {
+    menu.removeAttr('style');
+  }
+}); 
+
+</script>
   
   
   <script type="text/javascript">
@@ -206,15 +226,13 @@ To deliver the best services possible - we are establishing strategic partnershi
     }
     
     $(".prev, .next", this).on("click", anim);
-    $gal.hover(stop, play);
+    /*$gal.hover(stop, play);*/
     play();
 
   });
 
 });
 </script>
-  
-  
   
   
     </body>

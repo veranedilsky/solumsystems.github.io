@@ -18,6 +18,7 @@
         <link rel="stylesheet" href="css/normalize.css">
         <link rel="stylesheet" href="css/main.css">
         <script src="js/vendor/modernizr-2.8.3.min.js"></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
         
     </head>
     
@@ -27,16 +28,20 @@
 
 
 <nav>
-<a class="logo" href="index.html"><img src="img/logo.png"/></a>
+
+<div id="wrapnav">
+<a href="index.html"><img class="logo" src="img/logo.svg"/></a>
+<a href="#" id="pull">Menu</a>
+</div>
 	
 <ul>
 <li><a href="index.html">Home</a></li>
 <li><a href="services.html">Services</a></li>
 <li><a href="projects.html">Projects</a></li>
 <li><a href="about-us.html" class="active">About Us</a></li>
-</ul>	
-			
-		</nav>
+</ul>
+
+</nav>
 
 
 
@@ -138,7 +143,29 @@ Our clients already benefiting from Solum's support availability. We are proud t
 
 
 
+  <script type="text/javascript">
 
+$(function() {
+  var pull    = $('#pull');
+    menu    = $('nav ul');
+    menuHeight  = menu.height();
+ 
+  $(pull).on('click', function(e) {
+    e.preventDefault();
+    menu.slideToggle();
+  });
+});
+
+  
+  $(window).resize(function(){
+  var w = $(window).width();
+  if(w > 320 && menu.is(':hidden')) {
+    menu.removeAttr('style');
+  }
+}); 
+
+</script>
+  
 
     </body>
 </html>
