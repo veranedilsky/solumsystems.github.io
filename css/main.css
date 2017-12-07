@@ -90,6 +90,10 @@ border-spacing: 0;
     padding: 0.2em 0;
 }
 
+object{
+    pointer-events: none;
+}
+
 .clearfix:before,
 .clearfix:after {
     content: " ";
@@ -257,7 +261,7 @@ h2:after{
 border-bottom: 5px solid #002753;
     content: "";
     display: block;
-    margin: 0 auto;
+    margin: 0 auto 60px;
     padding-bottom: 20px;
     width: 20%;
 }
